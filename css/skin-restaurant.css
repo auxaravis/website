@@ -41,19 +41,21 @@ Copyright: ThemeMountain
 /*------------------------------------------------------------------
 [1. Typography]
 */
-
+html {
+	font-size:  12px;
+}
 body{
 	letter-spacing: 0;
 	font-weight: 300;
 	font-size: 1.4rem;
-	line-height: 1.8;
+	line-height: 1.6;
 	color: #111;
 }
 body,
 input,
 select,
 textarea{
-	font-family: 'Merriweather', 'Helvetica Neue', sans-serif;
+	font-family: 'Times', serif;
 }
 h1, 
 h2, 
@@ -2844,13 +2846,10 @@ textarea.required-field{
 /* Footer Text */
 .footer .widget,
 .footer address{
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 	color: #111;
 	text-transform: none;
 	font-style: normal;
-}
-.footer-top a:not(.button):not([class*="icon-"]){
-	font-size: 1.3rem;
 }
 .footer-top a:not(.button){
 	color: #666;
