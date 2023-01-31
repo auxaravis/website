@@ -1,0 +1,89 @@
+# Uncomment for development environment
+#  Run "npx netlify-cms-proxy-server" to start local Netlify server
+#local_backend: true
+#backend:
+#  name: git-gateway
+#  branch: main
+
+# Uncomment for production environment
+backend:
+  name: github
+  repo: auxaravis/auxaravis.github.io
+  branch: main
+  base_url: https://github-oauth-ojofun7zia-ew.a.run.app
+  auth: github-oauth/auth
+
+
+media_folder: "src/media"
+public_folder: "/media"
+locale: "fr"
+search: false
+
+
+# publish_mode: editorial_workflow
+collections:
+  - label: "Paramètres"
+    name: "settings"
+    files:
+      - label: "Paramètres"
+        name: "settings"
+        file: "src/_data/settings.json"
+        format: "json"
+        fields:
+          - label: "En-tête"
+            name: "header"
+            widget: markdown
+            minimal: true
+          - label: "Horaires - titre"
+            name: "horairesTitre"
+            widget: string
+          - label: "Horaires - message"
+            name: "horairesMessage"
+            widget: markdown
+            minimal: true
+          - label: "Menu bistrot - titre"
+            name: "bistrotTitre"
+            widget: string
+          - label: "Menu bistrot - message"
+            name: "bistrotMessage"
+            widget: markdown
+            minimal: true
+          - label: "Menu bistrot - fichier"
+            name: "bistrotFichier"
+            widget: image
+          - label: "Plat 1 - titre"
+            name: "plat1Titre"
+            widget: string
+          - label: "Plat 1 - message"
+            name: "plat1Message"
+            widget: string
+          - label: "Plat 2 - titre"
+            name: "plat2Titre"
+            widget: string
+          - label: "Plat 2 - message"
+            name: "plat2Message"
+            widget: string
+          - label: "Plat 3 - titre"
+            name: "plat3Titre"
+            widget: string
+          - label: "Plat 3 - message"
+            name: "plat3Message"
+            widget: string
+          - label: "Dessert 1 - titre"
+            name: "dessert1Titre"
+            widget: string
+          - label: "Dessert 1 - message"
+            name: "dessert1Message"
+            widget: string
+          - label: "Dessert 2 - titre"
+            name: "dessert2Titre"
+            widget: string
+          - label: "Dessert 2 - message"
+            name: "dessert2Message"
+            widget: string
+          - label: "Dessert 3 - titre"
+            name: "dessert3Titre"
+            widget: string
+          - label: "Dessert 3 - message"
+            name: "dessert3Message"
+            widget: string
