@@ -6,15 +6,17 @@
     "build": "npx @11ty/eleventy",
     "clean": "rm -rf build",
     "cms": "npx netlify-cms-proxy-server",
-    "serve": "npx @11ty/eleventy --serve"
+    "serve": "npx @11ty/eleventy --serve",
+    "updateDeps": "ncu -u -t minor"
   },
   "engines": {
-    "node": "19"
+    "node": "18"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.0-beta.3"
+    "@11ty/eleventy": "^2.0.1",
+    "npm-check-updates": "^16.10.15"
   }
 }
